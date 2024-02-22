@@ -10,9 +10,9 @@ def speak_text():
             break
 
         rate = engine.getProperty('rate')
-        engine.setProperty('rate', rate - 50)
+        engine.setProperty('rate', rate)
         voices = engine.getProperty('voices')
-        engine.setProperty('voice', voices[2].id)
+        engine.setProperty('voice', voices[3].id)
         try:
             engine.say(text)
             engine.runAndWait()
