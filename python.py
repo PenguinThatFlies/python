@@ -11,7 +11,7 @@ def speak_text_from_file(file_path):
             rate = engine.getProperty('rate')
             engine.setProperty('rate', rate)
             voices = engine.getProperty('voices')
-            engine.setProperty('voice', voices[3].id)
+            engine.setProperty('voice', voices[2].id)
             try:
                 engine.say(text)
                 engine.runAndWait()
